@@ -1,0 +1,17 @@
+#Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
+
+def contar_letra_a(s):
+    count_a_min = s.count('a')
+    count_a_mai = s.count('A')
+    count_a_ace = s.count('ã')
+    return count_a_min, count_a_mai, count_a_ace
+
+# String informada
+string = "A de amor, b de baixinho, c de coração"
+
+# Contagem da letra 'a' (minúscula e maiúscula)
+quantidade_a_min, quantidade_a_mai, count_a_ace = contar_letra_a(string)
+
+print(f"A letra 'a' minúscula aparece {quantidade_a_min} vezes na string.")
+print(f"A letra 'A' maiúscula aparece {quantidade_a_mai} vezes na string.")
+print(f"A letra 'ã' maiúscula aparece {quantidade_a_mai} vezes na string.")
